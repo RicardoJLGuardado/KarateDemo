@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>src.test.java.Test</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">1</div>
+      <div id="nav-fail" class="bg-danger">0</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2022-03-02 04:58:06 p. m.</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1:2]"><span>[1:2]</span> <span>Test for PokeAPI</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">src/test/java/Test.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">1st API Test</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1:2]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1:2]</span>
+                <span class="scenario-name">Test for PokeAPI</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>1532</span>
+            </div>
+          </div>
+          
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.3">
+      <div class="step-ref passed">3</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>url &quot;https://fakerestapi.azurewebsites.net/api/v1/Activities&quot;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">65</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.4">
+      <div class="step-ref passed">4</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method GET</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1424</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.4">16:58:05.762 request:
+1 &gt; GET https://fakerestapi.azurewebsites.net/api/v1/Activities
+1 &gt; Host: fakerestapi.azurewebsites.net
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.13)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+16:58:06.834 response time in milliseconds: 1070
+1 &lt; 200
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Content-Type: application/json; charset=utf-8; v=1.0
+1 &lt; Server: Kestrel
+1 &lt; api-supported-versions: 1.0
+1 &lt; Date: Wed, 02 Mar 2022 22:58:06 GMT
+[{&quot;id&quot;:1,&quot;title&quot;:&quot;Activity 1&quot;,&quot;dueDate&quot;:&quot;2022-03-02T23:58:07.5656195+00:00&quot;,&quot;completed&quot;:false},{&quot;id&quot;:2,&quot;title&quot;:&quot;Activity 2&quot;,&quot;dueDate&quot;:&quot;2022-03-03T00:58:07.5656222+00:00&quot;,&quot;completed&quot;:true},{&quot;id&quot;:3,&quot;title&quot;:&quot;Activity 3&quot;,&quot;dueDate&quot;:&quot;2022-03-03T01:58:07.5656225+00:00&quot;,&quot;completed&quot;:false},{&quot;id&quot;:4,&quot;title&quot;:&quot;Activity 4&quot;,&quot;dueDate&quot;:&quot;2022-03-03T02:58:07.5656227+00:00&quot;,&quot;completed&quot;:true},{&quot;id&quot;:5,&quot;title&quot;:&quot;Activity 5&quot;,&quot;dueDate&quot;:&quot;2022-03-03T03:58:07.5656229+00:00&quot;,&quot;completed&quot;:false},{&quot;id&quot;:6,&quot;title&quot;:&quot;Activity 6&quot;,&quot;dueDate&quot;:&quot;2022-03-03T04:58:07.5656234+00:00&quot;,&quot;completed&quot;:true},{&quot;id&quot;:7,&quot;title&quot;:&quot;Activity 7&quot;,&quot;dueDate&quot;:&quot;2022-03-03T05:58:07.5656237+00:00&quot;,&quot;completed&quot;:false},{&quot;id&quot;:8,&quot;title&quot;:&quot;Activity 8&quot;,&quot;dueDate&quot;:&quot;2022-03-03T06:58:07.5656239+00:00&quot;,&quot;completed&quot;:true},{&quot;id&quot;:9,&quot;title&quot;:&quot;Activity 9&quot;,&quot;dueDate&quot;:&quot;2022-03-03T07:58:07.5656242+00:00&quot;,&quot;completed&quot;:false},{&quot;id&quot;:10,&quot;title&quot;:&quot;Activity 10&quot;,&quot;dueDate&quot;:&quot;2022-03-03T08:58:07.5656247+00:00&quot;,&quot;completed&quot;:true},{&quot;id&quot;:11,&quot;title&quot;:&quot;Activity 11&quot;,&quot;dueDate&quot;:&quot;2022-03-03T09:58:07.565625+00:00&quot;,&quot;completed&quot;:false},{&quot;id&quot;:12,&quot;title&quot;:&quot;Activity 12&quot;,&quot;dueDate&quot;:&quot;2022-03-03T10:58:07.5656252+00:00&quot;,&quot;completed&quot;:true},{&quot;id&quot;:13,&quot;title&quot;:&quot;Activity 13&quot;,&quot;dueDate&quot;:&quot;2022-03-03T11:58:07.5656255+00:00&quot;,&quot;completed&quot;:false},{&quot;id&quot;:14,&quot;title&quot;:&quot;Activity 14&quot;,&quot;dueDate&quot;:&quot;2022-03-03T12:58:07.5656257+00:00&quot;,&quot;completed&quot;:true},{&quot;id&quot;:15,&quot;title&quot;:&quot;Activity 15&quot;,&quot;dueDate&quot;:&quot;2022-03-03T13:58:07.565626+00:00&quot;,&quot;completed&quot;:false},{&quot;id&quot;:16,&quot;title&quot;:&quot;Activity 16&quot;,&quot;dueDate&quot;:&quot;2022-03-03T14:58:07.5656262+00:00&quot;,&quot;completed&quot;:true},{&quot;id&quot;:17,&quot;title&quot;:&quot;Activity 17&quot;,&quot;dueDate&quot;:&quot;2022-03-03T15:58:07.5656265+00:00&quot;,&quot;completed&quot;:false},{&quot;id&quot;:18,&quot;title&quot;:&quot;Activity 18&quot;,&quot;dueDate&quot;:&quot;2022-03-03T16:58:07.5656268+00:00&quot;,&quot;completed&quot;:true},{&quot;id&quot;:19,&quot;title&quot;:&quot;Activity 19&quot;,&quot;dueDate&quot;:&quot;2022-03-03T17:58:07.565627+00:00&quot;,&quot;completed&quot;:false},{&quot;id&quot;:20,&quot;title&quot;:&quot;Activity 20&quot;,&quot;dueDate&quot;:&quot;2022-03-03T18:58:07.5656273+00:00&quot;,&quot;completed&quot;:true},{&quot;id&quot;:21,&quot;title&quot;:&quot;Activity 21&quot;,&quot;dueDate&quot;:&quot;2022-03-03T19:58:07.5656275+00:00&quot;,&quot;completed&quot;:false},{&quot;id&quot;:22,&quot;title&quot;:&quot;Activity 22&quot;,&quot;dueDate&quot;:&quot;2022-03-03T20:58:07.5656278+00:00&quot;,&quot;completed&quot;:true},{&quot;id&quot;:23,&quot;title&quot;:&quot;Activity 23&quot;,&quot;dueDate&quot;:&quot;2022-03-03T21:58:07.565628+00:00&quot;,&quot;completed&quot;:false},{&quot;id&quot;:24,&quot;title&quot;:&quot;Activity 24&quot;,&quot;dueDate&quot;:&quot;2022-03-03T22:58:07.5656283+00:00&quot;,&quot;completed&quot;:true},{&quot;id&quot;:25,&quot;title&quot;:&quot;Activity 25&quot;,&quot;dueDate&quot;:&quot;2022-03-03T23:58:07.5656285+00:00&quot;,&quot;completed&quot;:false},{&quot;id&quot;:26,&quot;title&quot;:&quot;Activity 26&quot;,&quot;dueDate&quot;:&quot;2022-03-04T00:58:07.5656288+00:00&quot;,&quot;completed&quot;:true},{&quot;id&quot;:27,&quot;title&quot;:&quot;Activity 27&quot;,&quot;dueDate&quot;:&quot;2022-03-04T01:58:07.565629+00:00&quot;,&quot;completed&quot;:false},{&quot;id&quot;:28,&quot;title&quot;:&quot;Activity 28&quot;,&quot;dueDate&quot;:&quot;2022-03-04T02:58:07.5656292+00:00&quot;,&quot;completed&quot;:true},{&quot;id&quot;:29,&quot;title&quot;:&quot;Activity 29&quot;,&quot;dueDate&quot;:&quot;2022-03-04T03:58:07.5656295+00:00&quot;,&quot;completed&quot;:false},{&quot;id&quot;:30,&quot;title&quot;:&quot;Activity 30&quot;,&quot;dueDate&quot;:&quot;2022-03-04T04:58:07.5656297+00:00&quot;,&quot;completed&quot;:true}]
+
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.5">
+      <div class="step-ref passed">5</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.6">
+      <div class="step-ref passed">6</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>print response</span>
+      </div>
+    </div>
+    <div class="time-cell passed">43</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="0.6">16:58:06.893 [print] [
+  {
+    &quot;id&quot;: 1,
+    &quot;title&quot;: &quot;Activity 1&quot;,
+    &quot;dueDate&quot;: &quot;2022-03-02T23:58:07.5656195+00:00&quot;,
+    &quot;completed&quot;: false
+  },
+  {
+    &quot;id&quot;: 2,
+    &quot;title&quot;: &quot;Activity 2&quot;,
+    &quot;dueDate&quot;: &quot;2022-03-03T00:58:07.5656222+00:00&quot;,
+    &quot;completed&quot;: true
+  },
+  {
+    &quot;id&quot;: 3,
+    &quot;title&quot;: &quot;Activity 3&quot;,
+    &quot;dueDate&quot;: &quot;2022-03-03T01:58:07.5656225+00:00&quot;,
+    &quot;completed&quot;: false
+  },
+  {
+    &quot;id&quot;: 4,
+    &quot;title&quot;: &quot;Activity 4&quot;,
+    &quot;dueDate&quot;: &quot;2022-03-03T02:58:07.5656227+00:00&quot;,
+    &quot;completed&quot;: true
+  },
+  {
+    &quot;id&quot;: 5,
+    &quot;title&quot;: &quot;Activity 5&quot;,
+    &quot;dueDate&quot;: &quot;2022-03-03T03:58:07.5656229+00:00&quot;,
+    &quot;completed&quot;: false
+  },
+  {
+    &quot;id&quot;: 6,
+    &quot;title&quot;: &quot;Activity 6&quot;,
+    &quot;dueDate&quot;: &quot;2022-03-03T04:58:07.5656234+00:00&quot;,
+    &quot;completed&quot;: true
+  },
+  {
+    &quot;id&quot;: 7,
+    &quot;title&quot;: &quot;Activity 7&quot;,
+    &quot;dueDate&quot;: &quot;2022-03-03T05:58:07.5656237+00:00&quot;,
+    &quot;completed&quot;: false
+  },
+  {
+    &quot;id&quot;: 8,
+    &quot;title&quot;: &quot;Activity 8&quot;,
+    &quot;dueDate&quot;: &quot;2022-03-03T06:58:07.5656239+00:00&quot;,
+    &quot;completed&quot;: true
+  },
+  {
+    &quot;id&quot;: 9,
+    &quot;title&quot;: &quot;Activity 9&quot;,
+    &quot;dueDate&quot;: &quot;2022-03-03T07:58:07.5656242+00:00&quot;,
+    &quot;completed&quot;: false
+  },
+  {
+    &quot;id&quot;: 10,
+    &quot;title&quot;: &quot;Activity 10&quot;,
+    &quot;dueDate&quot;: &quot;2022-03-03T08:58:07.5656247+00:00&quot;,
+    &quot;completed&quot;: true
+  },
+  {
+    &quot;id&quot;: 11,
+    &quot;title&quot;: &quot;Activity 11&quot;,
+    &quot;dueDate&quot;: &quot;2022-03-03T09:58:07.565625+00:00&quot;,
+    &quot;completed&quot;: false
+  },
+  {
+    &quot;id&quot;: 12,
+    &quot;title&quot;: &quot;Activity 12&quot;,
+    &quot;dueDate&quot;: &quot;2022-03-03T10:58:07.5656252+00:00&quot;,
+    &quot;completed&quot;: true
+  },
+  {
+    &quot;id&quot;: 13,
+    &quot;title&quot;: &quot;Activity 13&quot;,
+    &quot;dueDate&quot;: &quot;2022-03-03T11:58:07.5656255+00:00&quot;,
+    &quot;completed&quot;: false
+  },
+  {
+    &quot;id&quot;: 14,
+    &quot;title&quot;: &quot;Activity 14&quot;,
+    &quot;dueDate&quot;: &quot;2022-03-03T12:58:07.5656257+00:00&quot;,
+    &quot;completed&quot;: true
+  },
+  {
+    &quot;id&quot;: 15,
+    &quot;title&quot;: &quot;Activity 15&quot;,
+    &quot;dueDate&quot;: &quot;2022-03-03T13:58:07.565626+00:00&quot;,
+    &quot;completed&quot;: false
+  },
+  {
+    &quot;id&quot;: 16,
+    &quot;title&quot;: &quot;Activity 16&quot;,
+    &quot;dueDate&quot;: &quot;2022-03-03T14:58:07.5656262+00:00&quot;,
+    &quot;completed&quot;: true
+  },
+  {
+    &quot;id&quot;: 17,
+    &quot;title&quot;: &quot;Activity 17&quot;,
+    &quot;dueDate&quot;: &quot;2022-03-03T15:58:07.5656265+00:00&quot;,
+    &quot;completed&quot;: false
+  },
+  {
+    &quot;id&quot;: 18,
+    &quot;title&quot;: &quot;Activity 18&quot;,
+    &quot;dueDate&quot;: &quot;2022-03-03T16:58:07.5656268+00:00&quot;,
+    &quot;completed&quot;: true
+  },
+  {
+    &quot;id&quot;: 19,
+    &quot;title&quot;: &quot;Activity 19&quot;,
+    &quot;dueDate&quot;: &quot;2022-03-03T17:58:07.565627+00:00&quot;,
+    &quot;completed&quot;: false
+  },
+  {
+    &quot;id&quot;: 20,
+    &quot;title&quot;: &quot;Activity 20&quot;,
+    &quot;dueDate&quot;: &quot;2022-03-03T18:58:07.5656273+00:00&quot;,
+    &quot;completed&quot;: true
+  },
+  {
+    &quot;id&quot;: 21,
+    &quot;title&quot;: &quot;Activity 21&quot;,
+    &quot;dueDate&quot;: &quot;2022-03-03T19:58:07.5656275+00:00&quot;,
+    &quot;completed&quot;: false
+  },
+  {
+    &quot;id&quot;: 22,
+    &quot;title&quot;: &quot;Activity 22&quot;,
+    &quot;dueDate&quot;: &quot;2022-03-03T20:58:07.5656278+00:00&quot;,
+    &quot;completed&quot;: true
+  },
+  {
+    &quot;id&quot;: 23,
+    &quot;title&quot;: &quot;Activity 23&quot;,
+    &quot;dueDate&quot;: &quot;2022-03-03T21:58:07.565628+00:00&quot;,
+    &quot;completed&quot;: false
+  },
+  {
+    &quot;id&quot;: 24,
+    &quot;title&quot;: &quot;Activity 24&quot;,
+    &quot;dueDate&quot;: &quot;2022-03-03T22:58:07.5656283+00:00&quot;,
+    &quot;completed&quot;: true
+  },
+  {
+    &quot;id&quot;: 25,
+    &quot;title&quot;: &quot;Activity 25&quot;,
+    &quot;dueDate&quot;: &quot;2022-03-03T23:58:07.5656285+00:00&quot;,
+    &quot;completed&quot;: false
+  },
+  {
+    &quot;id&quot;: 26,
+    &quot;title&quot;: &quot;Activity 26&quot;,
+    &quot;dueDate&quot;: &quot;2022-03-04T00:58:07.5656288+00:00&quot;,
+    &quot;completed&quot;: true
+  },
+  {
+    &quot;id&quot;: 27,
+    &quot;title&quot;: &quot;Activity 27&quot;,
+    &quot;dueDate&quot;: &quot;2022-03-04T01:58:07.565629+00:00&quot;,
+    &quot;completed&quot;: false
+  },
+  {
+    &quot;id&quot;: 28,
+    &quot;title&quot;: &quot;Activity 28&quot;,
+    &quot;dueDate&quot;: &quot;2022-03-04T02:58:07.5656292+00:00&quot;,
+    &quot;completed&quot;: true
+  },
+  {
+    &quot;id&quot;: 29,
+    &quot;title&quot;: &quot;Activity 29&quot;,
+    &quot;dueDate&quot;: &quot;2022-03-04T03:58:07.5656295+00:00&quot;,
+    &quot;completed&quot;: false
+  },
+  {
+    &quot;id&quot;: 30,
+    &quot;title&quot;: &quot;Activity 30&quot;,
+    &quot;dueDate&quot;: &quot;2022-03-04T04:58:07.5656297+00:00&quot;,
+    &quot;completed&quot;: true
+  }
+]
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
